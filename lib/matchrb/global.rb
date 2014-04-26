@@ -1,2 +1,2 @@
 require 'matchrb'
-Object.include(Matchrb)
+Object.send(:include, Matchrb)
