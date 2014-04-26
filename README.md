@@ -48,7 +48,7 @@ Matchrb.match object,
 ```
 
 It also has some functionality akin to extractors in Scala. All you have to do
-is return some object from #===.
+is return some object from `#===`.
 
 ```ruby
 Multiple = Class.new do
@@ -71,7 +71,7 @@ match 99,
 ```
 
 It's not as powerful, though: you can't return a falsy value. The
-implementaiton is too simple as of yet.
+implementation is too simple as of yet.
 
 ## TODO
 
