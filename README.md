@@ -73,6 +73,20 @@ match 99,
 It's not as powerful, though: you can't return a falsy value. The
 implementation is too simple as of yet.
 
+If you're one of those that like Fizz Buzz programs:
+
+```ruby
+divisible_by = lambda {|number, value| value % number == 0}.curry
+
+(1..100).each do |i|
+  puts match i,
+         divisible_by[15] => "Fizz Buzz",
+         divisible_by[5]  => "Buzz",
+         divisible_by[3]  => "Fizz",
+         otherwise        => i
+end
+````
+
 ## TODO
 
 * Proper objects for matching, instead of relying on truthy/falsy values
